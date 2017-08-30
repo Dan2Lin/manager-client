@@ -1,0 +1,7 @@
+{
+  "/staff":{
+    "target":"https://uat.redgltc.com:8443",
+    "secure": false,
+    "changeOrigin": true
+  }
+}
