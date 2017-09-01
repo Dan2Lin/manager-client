@@ -8,6 +8,13 @@ import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import {UserServiceService} from './service/user-service.service';
+import {RouterModule, Routes} from '@angular/router';
+import { HomeComponent } from './home/home.component';
+
+export const ROUTES: Routes = [
+  { path: '', component: LoginComponent},
+  { path: 'home', component: HomeComponent},
+];
 
 @NgModule({
   declarations: [
@@ -15,12 +22,14 @@ import {UserServiceService} from './service/user-service.service';
     HeaderComponent,
     AsideComponent,
     MainContentComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
     HttpModule,
     BrowserModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule.forRoot(ROUTES)
   ],
   providers: [UserServiceService],
   bootstrap: [AppComponent]

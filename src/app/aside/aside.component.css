@@ -1,0 +1,21 @@
+.aside-wrapper{
+  height:100%;
+  background: rgb(81,82,89);
+}
+.aside-wrapper ul{
+  padding: 0px;
+
+}
+.aside-wrapper ul li{
+  list-style: none;
+  line-height: 50px;
+  color: #eeeeee;
+  /*border-bottom: 1px solid seashell;*/
+  margin-bottom: 5px;
+  padding-left: 10px;
+  vertical-align: middle;
+}
+.aside-wrapper{
+  margin-top: -19px;
+  height: 600px;
+}
